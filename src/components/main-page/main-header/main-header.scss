@@ -1,0 +1,41 @@
+@import '../../../style/variables.scss';
+
+
+.main {
+        position: relative;
+        height: 640px;
+        background: url(../../../resources/img/main-page/main-header.jpg) center center/cover no-repeat;
+    &__title {
+        font-size: 40px;
+        font-weight: 700;
+        color: $white;
+        text-align: center;
+        margin-top: 111px;
+        text-shadow: $text-shadow;
+    }
+    &__beans {
+        display: block;
+        margin: 0 auto;
+        margin-top: 21px;
+    }
+    &__text {
+        padding: 10px 0;
+        font-size: 24px;
+        font-weight: 700;
+        color: $white;
+        text-align: center;
+        text-shadow: $text-shadow;
+    }
+
+    &__btn{
+        display: block;
+        width: 120px;
+        height: 30px;
+        background: none;
+        border: 1px solid #fff;
+        border-radius: 3px;
+        color: $white;
+        margin: 18px auto;
+        text-shadow: $text-shadow;
+    }
+}

@@ -1,0 +1,22 @@
+.footer {
+    height: 150px;
+    &__nav {
+        position: relative;
+        padding-top: 52px;
+        text-align: center;
+        margin-bottom: 30px;
+        &_item {
+            font-size: 12px;
+            font-weight: 400;
+            color: black;
+            padding: 0 20px;
+            font-weight: 400;
+        }
+    }
+    &__beans_pair {
+        position: absolute;
+        top: 50%;
+        left: 37.5%;
+    }
+}
+

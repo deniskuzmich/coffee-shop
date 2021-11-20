@@ -1,0 +1,15 @@
+@import '../../../style/variables.scss';
+
+.coffee {
+    height: 260px;
+    background: url(../../../resources/img/coffee-page/coffee-shop.jpg) center center/cover no-repeat;
+    &__title {
+        margin-top: 60px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 58px;
+        color: $white;
+    }
+}  
+

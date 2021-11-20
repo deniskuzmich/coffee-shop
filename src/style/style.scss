@@ -1,0 +1,43 @@
+@import './variables';
+
+@font-face{
+    font-family: 'Merienda';
+    src: url('../resources/fonts/Merienda-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+  
+@font-face{
+    font-family: 'Merienda';
+    src: url('../resources/fonts/Merienda-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    font-family: "Merienda", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li,
+dl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+button {
+    cursor: pointer;
+}

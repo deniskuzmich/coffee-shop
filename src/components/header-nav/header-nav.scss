@@ -1,0 +1,22 @@
+@import '../../style/variables.scss';
+
+.nav {
+    &__wrapper {
+        position: relative;
+        height: 40px;
+        min-width: 355px;
+        padding: 30px 0 0 149px;
+    }
+    &__item {
+        font-size: 12px;
+        font-weight: 400;
+        color: $white;
+        text-shadow: $text-shadow;
+        padding: 0 20px;
+    }
+    &__beans {
+        position: absolute;
+        top: 1em;
+        left: 8.5em;
+    }
+}
