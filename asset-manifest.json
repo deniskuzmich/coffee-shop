@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/coffee-shop/static/css/main.116daff9.chunk.css",
+    "main.js": "/coffee-shop/static/js/main.44699dc8.chunk.js",
+    "main.js.map": "/coffee-shop/static/js/main.44699dc8.chunk.js.map",
+    "runtime-main.js": "/coffee-shop/static/js/runtime-main.cb1a9f87.js",
+    "runtime-main.js.map": "/coffee-shop/static/js/runtime-main.cb1a9f87.js.map",
+    "static/js/2.737eba59.chunk.js": "/coffee-shop/static/js/2.737eba59.chunk.js",
+    "static/js/2.737eba59.chunk.js.map": "/coffee-shop/static/js/2.737eba59.chunk.js.map",
+    "index.html": "/coffee-shop/index.html",
+    "static/css/main.116daff9.chunk.css.map": "/coffee-shop/static/css/main.116daff9.chunk.css.map",
+    "static/js/2.737eba59.chunk.js.LICENSE.txt": "/coffee-shop/static/js/2.737eba59.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/coffee-shop/static/media/Merienda-Regular.650d7290.ttf",
+    "static/media/aromistico.dcb91dcb.png": "/coffee-shop/static/media/aromistico.dcb91dcb.png",
+    "static/media/best-coffee.scss": "/coffee-shop/static/media/best-coffee-bg.6e0053e1.jpg",
+    "static/media/coffee-item.d1ec27aa.png": "/coffee-shop/static/media/coffee-item.d1ec27aa.png",
+    "static/media/coffee-header.scss": "/coffee-shop/static/media/coffee-shop.e91beba1.jpg",
+    "static/media/girl.65e20e63.png": "/coffee-shop/static/media/girl.65e20e63.png",
+    "static/media/main-header.scss": "/coffee-shop/static/media/main-header.bb5981bb.jpg",
+    "static/media/goods-header.scss": "/coffee-shop/static/media/pleasure.5484a95c.jpg",
+    "static/media/presto.eac7a006.png": "/coffee-shop/static/media/presto.eac7a006.png",
+    "static/media/solimo.93b7ca5e.png": "/coffee-shop/static/media/solimo.93b7ca5e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cb1a9f87.js",
+    "static/js/2.737eba59.chunk.js",
+    "static/css/main.116daff9.chunk.css",
+    "static/js/main.44699dc8.chunk.js"
+  ]
+}
