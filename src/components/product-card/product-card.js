@@ -1,6 +1,6 @@
 import aromistico from '../../resources/img/main-page/aromistico.png';
 
-const productCard = [
+const ProductCard = [
     {
         id: 1,
         thumbnail: aromistico,
@@ -45,4 +45,4 @@ const productCard = [
     }
 ]
 
-export default productCard;
+export default ProductCard;

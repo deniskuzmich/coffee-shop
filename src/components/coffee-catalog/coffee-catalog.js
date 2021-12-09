@@ -12,7 +12,6 @@ const CoffeeCatalog = ({data}) => {
             </div>
         )
 })
-debugger;
     return (
         <div className="coffee-catalog">
             {listItems}

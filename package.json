@@ -1,5 +1,5 @@
 {
-  "homepage": "http://deniskuzmich.github.io/coffee-shop_react",
+  "homepage": "http://deniskuzmich.github.io/coffee-shop",
   "name": "coffe-shop",
   "version": "0.1.0",
   "private": true,
@@ -11,14 +11,15 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "sass": "1.38.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run building",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
