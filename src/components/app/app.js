@@ -1,4 +1,5 @@
 import { useState, useEffect} from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import MainPage from "../main-page/main-page";
 import CoffeePage from "../coffee-page/coffee-page";
@@ -7,6 +8,7 @@ import GoodsPage from "../goods-page/goods-page";
 import CoffeeService from '../services/CoffeService';
 
 import './app.scss';
+
 
 
 const App = () =>  {
@@ -59,15 +61,20 @@ const App = () =>  {
     const visibleProd = filterProd(searchProd(coffeeList, term), filter);
         
         return (
-            <>
-                <MainPage />
-                <CoffeePage data={visibleProd} 
-                onUpdateSearch={onUpdateSearch} 
-                onFilterSelect={onFilterSelect}
-                />
-                <ItemPage />
-                <GoodsPage data={visibleProd}/>
-            </>
+            <Router>              
+                <Routes>
+                <Route exact path="/mainPage" element={<MainPage />}></Route>
+                    <Route exact path="/coffeePage" element={
+                        <CoffeePage data={visibleProd} 
+                        onUpdateSearch={onUpdateSearch} 
+                        onFilterSelect={onFilterSelect}
+                        />
+                    }>
+                    </Route>
+                    <Route exact path="/item" element={<ItemPage />}></Route>
+                    <Route exact path="/goods" element={<GoodsPage data={visibleProd}/>}></Route>
+                </Routes>
+            </Router>
         )
 }
 

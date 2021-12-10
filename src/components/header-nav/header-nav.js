@@ -1,14 +1,16 @@
 import pairBeansWhite from '../../resources/img/logo/pair-beans-white.png'
 import './header-nav.scss';
 
+import { Link } from 'react-router-dom';
+
 const HeaderNav = () => {
     return (
         <div className="nav">
             <nav className='nav__wrapper'>
                 <img src={pairBeansWhite} alt="pair-beans" className='nav__beans'/>
-                <a className='nav__item' href='#'>Coffe house</a>
-                <a className='nav__item' href='#'>Our coffee</a>
-                <a className='nav__item' href='#'>For your pleasure</a>
+                <Link exact to="/mainPage" className='nav__item'>Coffe house</Link>
+                <Link exact to="/coffeePage" className='nav__item'>Our coffee</Link>
+                <Link exact to="/goods" className='nav__item'>For your pleasure</Link>
             </nav>
         </div>
     )
