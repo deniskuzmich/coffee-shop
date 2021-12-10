@@ -1,4 +1,3 @@
-
 import { useState, useEffect} from 'react';
 
 import MainPage from "../main-page/main-page";
@@ -6,7 +5,6 @@ import CoffeePage from "../coffee-page/coffee-page";
 import ItemPage from "../item-page/item-page";
 import GoodsPage from "../goods-page/goods-page";
 import CoffeeService from '../services/CoffeService';
-
 
 import './app.scss';
 
@@ -38,7 +36,7 @@ const App = () =>  {
     }
 
     const onUpdateSearch = (term) => {
-        setCoffeeList({term});
+        setTerm(term);
     }
 
     const filterProd = (items, filter) => {
@@ -55,20 +53,20 @@ const App = () =>  {
     }
 
     const onFilterSelect = (filter) => {
-        setCoffeeList({filter});
+        setFilter(filter);
     }
 
-    // const visibleProd = filterProd(searchProd(coffeeList, term), filter);
+    const visibleProd = filterProd(searchProd(coffeeList, term), filter);
         
         return (
             <>
                 <MainPage />
-                <CoffeePage data={coffeeList} 
-                // onUpdateSearch={onUpdateSearch} 
-                // onFilterSelect={onFilterSelect}
+                <CoffeePage data={visibleProd} 
+                onUpdateSearch={onUpdateSearch} 
+                onFilterSelect={onFilterSelect}
                 />
-                {/* <ItemPage /> */}
-                {/* <GoodsPage data={visibleProd}/> */}
+                <ItemPage />
+                <GoodsPage data={visibleProd}/>
             </>
         )
 }

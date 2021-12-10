@@ -1,22 +1,19 @@
 import './coffee-about.scss';
-
+import {useState} from 'react';
 
 import BeansDescr from '../../beans-descr/beans-descr';
 import CoffeeCatalog from '../../coffee-catalog/coffee-catalog';
-import { Component } from 'react';
 
-class CoffeeAbout extends Component { 
-    state = {
-        term: ''
-    }
 
-    onUpdateSearch = (e) => {
+const CoffeeAbout = (props) => { 
+    const [term, setTerm] = useState('');
+
+    const onUpdateSearch = (e) => {
         const term = e.target.value;
-        this.setState({term});
-        this.props.onUpdateSearch(term);
+        setTerm(term);
+        props.onUpdateSearch(term);
     }
     
-    render() {
         const buttonsData = [  //создаем кнопки
             {country: 'Brazil', label: 'Brazil'},
             {country: 'Kenya', label: 'Kenya'},
@@ -30,7 +27,7 @@ class CoffeeAbout extends Component {
                 className={'search-btn'} 
                 type='button'
                 key={country}
-                onClick={() => this.props.onFilterSelect(country)}>
+                onClick={() => props.onFilterSelect(country)}>
                     {label}
                 </button>
             )
@@ -45,8 +42,8 @@ class CoffeeAbout extends Component {
                         <input type='text'
                                className='search-input'
                                placeholder='start typing here' 
-                               value= {this.state.term}
-                               onChange={this.onUpdateSearch}/>
+                               value= {term}
+                               onChange={onUpdateSearch}/>
                     </form>
                     <form className="filter-form">
                         <span>Or filter</span>
@@ -55,10 +52,9 @@ class CoffeeAbout extends Component {
                         </div>
                     </form>
                 </div>
-                <CoffeeCatalog data={this.props.data}/>
+                <CoffeeCatalog data={props.data}/>
             </div>
         )
-    }
 }
 
 export default CoffeeAbout;
