@@ -5,6 +5,7 @@ import coffeeItem from '../../../resources/img/coffee-item.png';
 
 const ItemAbout = () => {
     return (
+        
         <div className="item">
         <img className='item__image' src={coffeeItem} alt="coffeeImage" />
         <div className="item__descr">

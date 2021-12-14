@@ -9,7 +9,6 @@ const CoffeePage = (props) => {
         <Fragment>
             <CoffeeHeader />
             <CoffeeAbout data={props.data} onUpdateSearch={props.onUpdateSearch} onFilterSelect={props.onFilterSelect}/>
-            <Footer />
         </Fragment>
     )
 }

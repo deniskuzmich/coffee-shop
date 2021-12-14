@@ -7,6 +7,11 @@ function CoffeeService() {
         return res.map(_transformCoffee);
     }  
 
+    const getItemCoffee = (id) => {
+        const res = ProductCard;
+        return _transformCoffee(res.ProductCard);
+    }
+
     const _transformCoffee = (item) => {
         return {
             id: item.id,
@@ -16,7 +21,8 @@ function CoffeeService() {
             price: item.price
         }
     }
-    return {getAllCoffee}
+    return {getAllCoffee, getItemCoffee}
+    
 }
 
 export default CoffeeService;

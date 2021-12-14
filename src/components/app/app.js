@@ -1,13 +1,15 @@
 import { useState, useEffect} from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './app.scss';
 
 import MainPage from "../main-page/main-page";
 import CoffeePage from "../coffee-page/coffee-page";
 import ItemPage from "../item-page/item-page";
 import GoodsPage from "../goods-page/goods-page";
 import CoffeeService from '../services/CoffeService';
+import Footer from '../footer/footer';
+import ItemAbout from '../item-page/item-about/item-about';
 
-import './app.scss';
 
 
 
@@ -61,19 +63,19 @@ const App = () =>  {
     const visibleProd = filterProd(searchProd(coffeeList, term), filter);
         
         return (
-            <Router>              
-                <Routes>
-                <Route exact path="/mainPage" element={<MainPage />}></Route>
-                    <Route exact path="/coffeePage" element={
+            <Router>             
+                <Routes>  
+                <Route  path="/coffee-shop" element={<MainPage />} />           
+                <Route  path="/coffee-shop/:aboutCoffee" element={<ItemAbout />} />           
+                    <Route   path="/coffeePage" element={
                         <CoffeePage data={visibleProd} 
                         onUpdateSearch={onUpdateSearch} 
-                        onFilterSelect={onFilterSelect}
-                        />
-                    }>
-                    </Route>
-                    <Route exact path="/item" element={<ItemPage />}></Route>
-                    <Route exact path="/goods" element={<GoodsPage data={visibleProd}/>}></Route>
+                        onFilterSelect={onFilterSelect}/>
+                    } />
+                    <Route  path="/item" element={<ItemPage />} />
+                    <Route  path="/goods" element={<GoodsPage data={visibleProd}/>} />
                 </Routes>
+                <Footer />
             </Router>
         )
 }

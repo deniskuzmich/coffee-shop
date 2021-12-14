@@ -1,5 +1,4 @@
 import ItemHeader from "./item-header/item-header";
-import Footer from "../footer/footer";
 import ItemAbout from "./item-about/item-about";
 
 const ItemPage = () => {
@@ -7,7 +6,6 @@ const ItemPage = () => {
             <>
                 <ItemHeader />
                 <ItemAbout />
-                <Footer />
             </>
         )
 }

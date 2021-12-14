@@ -8,7 +8,7 @@ const BeansDescr = () => {
         <div className="beans__wrapper">
         <img className='beans__girl' src={girl} alt="girl" />
         <div className="beans__descr">
-            <h2 className="beans__title">About our beans</h2>
+            <h2 className="beans__title">About our beans </h2>
             <img src={beansBlack} alt="pair-beans" className='beans__black'/>
             <p className="beans__text">
                 Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
