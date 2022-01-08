@@ -1,4 +1,5 @@
 import ProductCard from "../product-card/product-card";
+import BestCoffeeItem from "../product-card/bestCoffee-card";
 
 function CoffeeService() {
 
@@ -8,8 +9,12 @@ function CoffeeService() {
     }  
 
     const getItemCoffee = (id) => {
-        const res = ProductCard;
-        return _transformCoffee(res.ProductCard);
+        return _transformCoffee(ProductCard[id]);
+    }
+
+    const getBestCoffee = () => {
+        const res = BestCoffeeItem;
+        return res.map(_transformCoffee);
     }
 
     const _transformCoffee = (item) => {
@@ -21,9 +26,9 @@ function CoffeeService() {
             price: item.price
         }
     }
-    return {getAllCoffee, getItemCoffee}
-    
+    return {getAllCoffee, getItemCoffee, getBestCoffee}
 }
+
 
 export default CoffeeService;
 

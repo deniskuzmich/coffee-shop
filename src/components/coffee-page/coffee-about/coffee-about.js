@@ -52,7 +52,7 @@ const CoffeeAbout = (props) => {
                         </div>
                     </form>
                 </div>
-                <CoffeeCatalog data={props.data}/>
+                <CoffeeCatalog data={props.data}/> 
             </div>
         )
 }

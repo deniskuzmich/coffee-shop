@@ -1,13 +1,12 @@
-import './beans-descr.scss';
+import '../beans-descr/beans-descr.scss';
 
 import beansBlack from '../../resources/img/logo/beans-black.png';
-import girl from '../../resources/img/coffee-page/girl.png';
+import cuple from '../../resources/img/goods-page/cuple.png';
 
-
-const BeansDescr = () => {
+const GoodsDescr = () => {
     return (
         <div className="beans__wrapper">
-        <img className='beans__girl' src={girl} alt="girl" />
+        <img className='beans__girl' src={cuple} alt="girl" />
         <div className="beans__descr">
             <h2 className="beans__title">About our beans </h2>
             <img src={beansBlack} alt="pair-beans" className='beans__black'/>
@@ -29,4 +28,4 @@ const BeansDescr = () => {
     )
 }
 
-export default BeansDescr;
+export default GoodsDescr;

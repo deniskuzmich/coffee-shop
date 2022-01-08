@@ -2,7 +2,7 @@ import {Fragment } from "react";
 
 import CoffeeAbout from "./coffee-about/coffee-about";
 import CoffeeHeader from "./coffee-header/coffee-header";
-import Footer from "../footer/footer";
+
 
 const CoffeePage = (props) => {
     return (

@@ -11,8 +11,6 @@ import Footer from '../footer/footer';
 import ItemAbout from '../item-page/item-about/item-about';
 
 
-
-
 const App = () =>  {
     const [coffeeList, setCoffeeList] = useState([]);
     const [term, setTerm] = useState('');
@@ -63,10 +61,10 @@ const App = () =>  {
     const visibleProd = filterProd(searchProd(coffeeList, term), filter);
         
         return (
-            <Router>             
+            <Router>           
                 <Routes>  
                 <Route  path="/coffee-shop" element={<MainPage />} />           
-                <Route  path="/coffee-shop/:aboutCoffee" element={<ItemAbout />} />           
+                <Route  path="/coffee-shop/:coffeeId" element={<ItemAbout />} />           
                     <Route   path="/coffeePage" element={
                         <CoffeePage data={visibleProd} 
                         onUpdateSearch={onUpdateSearch} 

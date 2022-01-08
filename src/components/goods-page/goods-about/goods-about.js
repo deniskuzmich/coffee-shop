@@ -1,12 +1,13 @@
 import './goods-about.scss';
 
-import BeansDescr from '../../beans-descr/beans-descr';
+
 import CoffeeCatalog from '../../coffee-catalog/coffee-catalog';
+import GoodsDescr from '../../goods-descr/goodsDescr';
 
 const GoodsAbout = (props) => {
     return (
         <div className="about-beans">
-            <BeansDescr />
+            <GoodsDescr />
         <hr />
             <CoffeeCatalog data={props.data}/>
         </div>

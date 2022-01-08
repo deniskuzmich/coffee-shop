@@ -9,7 +9,7 @@ const Footer = () => {
         <footer className="footer">
             <nav className='footer__nav'>
             <img src={pairBeansWhite} alt="pair-beans" className='footer__beans_pair'/>
-                <Link exact to="/mainPage" className='footer__nav_item' href='#'>Coffe house</Link>
+                <Link exact to="/coffee-shop" className='footer__nav_item' href='#'>Coffe house</Link>
                 <Link exact to ="/coffeePage" className='footer__nav_item' href='#'>Our coffee</Link>
                 <Link exact to ="/goods" className='footer__nav_item' href='#'>For your pleasure</Link>
             </nav>
